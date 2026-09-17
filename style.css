@@ -5,12 +5,12 @@ body {
     margin: 20px;
 }
 
-
 h1 {
     color: #f8fafc;
     font-size: 36px;
-    text-align: center;
-}
+    text-align: left;
+    text-decoration: underline;
+} 
 
 h2 {
     color: #0FFF50;
@@ -20,17 +20,13 @@ h2 {
 p {
     color: #f8fafc;
     font-size: 20px;
+    text-decoration: underline;
     line-height: 1.6;
 }
 
 ul {
     color: #f8fafcb4;
     font-size: 18px;
-}
-
-h2 { 
-    color: #0FFF50;
-    font-size: 32px;
 }
 
 h3 {
