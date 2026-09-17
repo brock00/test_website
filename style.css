@@ -1,26 +1,82 @@
-body { 
+body {
     background-color: #0f172a;
     font-family: Arial, sans-serif;
     color: #f8fafc;
     margin: 20px;
 }
 
-h1 {
-    color: #f8fafc;
-    font-size: 36px;
-    text-align: left;
-    text-decoration: underline;
-} 
-
-h2 {
-    color: #0FFF50;
-    font-size: 32px;
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
 }
 
-p {
-    color: #f8fafc;
-    font-size: 20px;
+h1 {
+    grid-column: 2;
+    font-size: 36px;
     text-decoration: underline;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.datetime {
+    grid-column: 3;
+    text-align: right;
+}
+
+.datetime p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    color: #0FFF50;
+    margin-top: 5px;
+}
+
+.network-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.network-info div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.network-info p {
+    margin: 0;
+}
+
+h3 {
+    font-size: 20px;
+    color: #0FFF50;
+}
+
+.vm-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vm-box {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #0FFF50;
+}
+
+
+p {
+    font-size: 20px;
+    color: #f8fafcb4;
     line-height: 1.6;
 }
 
@@ -29,16 +85,18 @@ ul {
     font-size: 18px;
 }
 
-h3 {
-    color: #0FFF50;
+h5 {
     font-size: 20px;
+    color: #0FFF50; 
+    margin-bottom: 10px;
 }
 
 button {
-    background-color: #36c2e1d9;
-    color: #0f172a;
+    background-color: #3B82F6;
+    color: #151314;
     border: none;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 10px 20px; 
     font-size: 16px;
     cursor: pointer;
 }
